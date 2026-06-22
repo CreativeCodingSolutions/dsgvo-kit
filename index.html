@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSGVO-Kit — Deutsche Compliance Generatoren</title>
+<meta name="description" content="Kostenlose Generatoren für Impressum, Datenschutzerklärung, Cookie-Banner, AGB und Widerrufsbelehrung. DSGVO-konform, deutsch, kein Login.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container header-inner">
+<div class="logo">DSGVO<span>-Kit</span></div>
+<nav>
+<a href="#impressum">Impressum</a>
+<a href="#datenschutz">Datenschutz</a>
+<a href="#cookie">Cookie-Banner</a>
+<a href="#agb">AGB</a>
+<a href="#widerruf">Widerruf</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Deine <span class="accent">DSGVO-Compliance</span> in 5 Minuten</h1>
+<p>Kostenlose Generatoren für deutsche Rechtsdokumente. Keine Registrierung, kein Login, keine Kosten. Einfach ausfüllen &amp; kopieren.</p>
+<div class="hero-grid">
+<a href="#impressum" class="hero-card">
+<div class="hero-card-icon">&#9776;</div>
+<h3>Impressum</h3>
+<p>§5 TMG, §55 RStV</p>
+</a>
+<a href="#datenschutz" class="hero-card">
+<div class="hero-card-icon">&#128274;</div>
+<h3>Datenschutz</h3>
+<p>DSGVO + TTDSG</p>
+</a>
+<a href="#cookie" class="hero-card">
+<div class="hero-card-icon">&#127850;</div>
+<h3>Cookie-Banner</h3>
+<p>HTML/JS Code</p>
+</a>
+<a href="#agb" class="hero-card">
+<div class="hero-card-icon">&#128214;</div>
+<h3>AGB</h3>
+<p>Allg. Geschäftsbedingungen</p>
+</a>
+<a href="#widerruf" class="hero-card">
+<div class="hero-card-icon">&#128260;</div>
+<h3>Widerruf</h3>
+<p>B2C Belehrung</p>
+</a>
+</div>
+</div>
+</section>
+
+<main class="container">
+
+<!-- IMPRESSUM -->
+<section id="impressum" class="generator">
+<h2>Impressum Generator <span class="badge">§5 TMG</span></h2>
+<p class="gen-desc">Pflichtangaben für geschäftsmäßige Webseiten in Deutschland.</p>
+<div class="gen-layout">
+<div class="gen-form">
+<div class="form-group">
+<label>Name / Firma</label>
+<input type="text" id="imp-name" placeholder="Max Mustermann">
+</div>
+<div class="form-group">
+<label>Straße &amp; Hausnummer</label>
+<input type="text" id="imp-street" placeholder="Musterstraße 123">
+</div>
+<div class="form-group">
+<label>PLZ &amp; Ort</label>
+<input type="text" id="imp-city" placeholder="12345 Berlin">
+</div>
+<div class="form-group">
+<label>Telefon (optional)</label>
+<input type="text" id="imp-phone" placeholder="+49 30 123456789">
+</div>
+<div class="form-group">
+<label>E-Mail</label>
+<input type="email" id="imp-email" placeholder="hallo@beispiel.de">
+</div>
+<div class="form-group">
+<label>USt-IdNr. (optional)</label>
+<input type="text" id="imp-ust" placeholder="DE123456789">
+</div>
+<button class="btn" onclick="generateImpressum()">Impressum generieren</button>
+</div>
+<div class="gen-output">
+<textarea id="imp-output" readonly placeholder="Dein Impressum erscheint hier..."></textarea>
+<button class="btn btn-small" onclick="copyOutput('imp-output')">Kopieren</button>
+</div>
+</div>
+</section>
+
+<!-- DATENSCHUTZ -->
+<section id="datenschutz" class="generator">
+<h2>Datenschutzerklärung Generator <span class="badge">DSGVO</span></h2>
+<p class="gen-desc">Datenschutzerklärung nach DSGVO Art. 13, 14 und TTDSG.</p>
+<div class="gen-layout">
+<div class="gen-form">
+<div class="form-group">
+<label>Name / Firma (Verantwortlicher)</label>
+<input type="text" id="ds-name" placeholder="Max Mustermann">
+</div>
+<div class="form-group">
+<label>Adresse</label>
+<input type="text" id="ds-addr" placeholder="Musterstraße 123, 12345 Berlin">
+</div>
+<div class="form-group">
+<label>E-Mail</label>
+<input type="email" id="ds-email" placeholder="hallo@beispiel.de">
+</div>
+<div class="form-group">
+<label>Telefon (optional)</label>
+<input type="text" id="ds-phone" placeholder="+49 30 123456789">
+</div>
+<div class="form-group">
+<label>Website-Zweck</label>
+<select id="ds-purpose">
+<option value="info">Informationsseite</option>
+<option value="shop">Onlineshop</option>
+<option value="service">Dienstleistung</option>
+<option value="blog">Blog / Content</option>
+<option value="other">Sonstiges</option>
+</select>
+</div>
+<div class="form-group">
+<label>Welche Dienste nutzt du?</label>
+<div class="checkbox-group">
+<label><input type="checkbox" id="ds-ga" checked> Google Analytics</label>
+<label><input type="checkbox" id="ds-gfonts"> Google Fonts</label>
+<label><input type="checkbox" id="ds-gmaps"> Google Maps</label>
+<label><input type="checkbox" id="ds-wp" checked> WordPress</label>
+<label><input type="checkbox" id="ds-mail"> E-Mail-Kontakt</label>
+<label><input type="checkbox" id="ds-contact" checked> Kontaktformular</label>
+</div>
+</div>
+<button class="btn" onclick="generateDatenschutz()">Datenschutzerklärung generieren</button>
+</div>
+<div class="gen-output">
+<textarea id="ds-output" readonly placeholder="Deine Datenschutzerklärung erscheint hier..."></textarea>
+<button class="btn btn-small" onclick="copyOutput('ds-output')">Kopieren</button>
+</div>
+</div>
+</section>
+
+<!-- COOKIE-BANNER -->
+<section id="cookie" class="generator">
+<h2>Cookie-Banner Generator <span class="badge">TTDSG</span></h2>
+<p class="gen-desc">DSGVO-konformer Cookie-Consent-Banner als HTML/JS/CSS-Code.</p>
+<div class="gen-layout">
+<div class="gen-form">
+<div class="form-group">
+<label>Seitentitel / Firma</label>
+<input type="text" id="cb-name" placeholder="Meine Webseite">
+</div>
+<div class="form-group">
+<label>Farben</label>
+<div class="form-row">
+<select id="cb-theme">
+<option value="dark">Dunkel</option>
+<option value="light">Hell</option>
+<option value="primary">Primärfarbe</option>
+</select>
+<select id="cb-position">
+<option value="bottom">Unten</option>
+<option value="top">Oben</option>
+<option value="modal">Modal</option>
+</select>
+</div>
+</div>
+<div class="checkbox-group">
+<label><input type="checkbox" id="cb-functional" checked disabled> Essenziell (immer nötig)</label>
+<label><input type="checkbox" id="cb-analytics" checked> Analytics</label>
+<label><input type="checkbox" id="cb-marketing"> Marketing</label>
+</div>
+<button class="btn" onclick="generateCookieBanner()">Cookie-Banner Code generieren</button>
+</div>
+<div class="gen-output">
+<textarea id="cb-output" readonly placeholder="Dein Cookie-Banner HTML/JS Code erscheint hier..." style="font-family: monospace;"></textarea>
+<button class="btn btn-small" onclick="copyOutput('cb-output')">Kopieren</button>
+</div>
+</div>
+</section>
+
+<!-- AGB -->
+<section id="agb" class="generator">
+<h2>AGB Generator <span class="badge">BGB</span></h2>
+<p class="gen-desc">Allgemeine Geschäftsbedingungen für gewerbliche Anbieter.</p>
+<div class="gen-layout">
+<div class="gen-form">
+<div class="form-group">
+<label>Name / Firma (Anbieter)</label>
+<input type="text" id="agb-name" placeholder="Max Mustermann e.K.">
+</div>
+<div class="form-group">
+<label>Adresse</label>
+<input type="text" id="agb-addr" placeholder="Musterstraße 123, 12345 Berlin">
+</div>
+<div class="form-group">
+<label>Angebotene Leistung / Produkte</label>
+<textarea id="agb-services" rows="3" placeholder="z.B. Webdesign, Softwareentwicklung, Beratung"></textarea>
+</div>
+<div class="form-group">
+<label>Vertragsart</label>
+<select id="agb-type">
+<option value="service">Dienstleistung</option>
+<option value="digital">Digitale Produkte</option>
+<option value="physical">Physische Produkte</option>
+<option value="mixed">Beides</option>
+</select>
+</div>
+<div class="form-group">
+<label>Zahlungsbedingungen</label>
+<select id="agb-payment">
+<option value="14">14 Tage netto</option>
+<option value="30">30 Tage netto</option>
+<option value="sofort">Sofort fällig</option>
+<option value="vorkasse">Vorkasse</option>
+</select>
+</div>
+<button class="btn" onclick="generateAGB()">AGB generieren</button>
+</div>
+<div class="gen-output">
+<textarea id="agb-output" readonly placeholder="Deine AGB erscheinen hier..."></textarea>
+<button class="btn btn-small" onclick="copyOutput('agb-output')">Kopieren</button>
+</div>
+</div>
+</section>
+
+<!-- WIDERRUF -->
+<section id="widerruf" class="generator">
+<h2>Widerrufsbelehrung Generator <span class="badge">B2C</span></h2>
+<p class="gen-desc">Gesetzliche Widerrufsbelehrung für Verbraucher (B2C) nach §312g BGB.</p>
+<div class="gen-layout">
+<div class="gen-form">
+<div class="form-group">
+<label>Name / Firma</label>
+<input type="text" id="wi-name" placeholder="Max Mustermann">
+</div>
+<div class="form-group">
+<label>Adresse</label>
+<input type="text" id="wi-addr" placeholder="Musterstraße 123, 12345 Berlin">
+</div>
+<div class="form-group">
+<label>E-Mail</label>
+<input type="email" id="wi-email" placeholder="hallo@beispiel.de">
+</div>
+<div class="form-group">
+<label>Telefon (optional)</label>
+<input type="text" id="wi-phone" placeholder="+49 30 123456789">
+</div>
+<div class="form-group">
+<label>Produktart</label>
+<select id="wi-type">
+<option value="digital">Digitale Produkte / Downloads</option>
+<option value="physical">Physische Produkte (Waren)</option>
+<option value="service">Dienstleistungen</option>
+<option value="mixed">Verschiedenes</option>
+</select>
+</div>
+<button class="btn" onclick="generateWiderruf()">Widerrufsbelehrung generieren</button>
+</div>
+<div class="gen-output">
+<textarea id="wi-output" readonly placeholder="Deine Widerrufsbelehrung erscheint hier..."></textarea>
+<button class="btn btn-small" onclick="copyOutput('wi-output')">Kopieren</button>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-inner">
+<p><strong>DSGVO-Kit</strong> — Kostenlose Compliance-Generatoren für den deutschen Markt</p>
+<p class="footer-meta">
+<strong>Hinweis:</strong> Diese Generatoren erstellen Vorlagen basierend auf deinen Angaben. Sie ersetzen keine anwaltliche Beratung. Für rechtssichere Dokumente konsultiere einen Rechtsanwalt.
+</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
