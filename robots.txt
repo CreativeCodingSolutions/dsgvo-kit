@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://creativecodingsolutions.github.io/dsgvo-kit/sitemap.xml
