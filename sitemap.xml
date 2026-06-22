@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://creativecodingsolutions.github.io/dsgvo-kit/</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creativecodingsolutions.github.io/dsgvo-kit/impressum.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://creativecodingsolutions.github.io/dsgvo-kit/datenschutz.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/impressum.html</loc><priority>0.5</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/datenschutz.html</loc><priority>0.5</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/faq/impressum-pflicht.html</loc><priority>0.6</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/faq/datenschutz-pflicht.html</loc><priority>0.6</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/faq/cookie-banner-pflicht.html</loc><priority>0.6</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/blog/index.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/blog/dsgvo-2026-pflichten.html</loc><priority>0.6</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/blog/ki-datenschutz-regulierung.html</loc><priority>0.6</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/blog/drittanbieter-haftung.html</loc><priority>0.6</priority></url>
+  <url><loc>https://creativecodingsolutions.github.io/dsgvo-kit/blog/email-werbung-dsgvo.html</loc><priority>0.6</priority></url>
 </urlset>
